@@ -75,9 +75,13 @@
     "testEnvironment": "node"
   },
   "lint-staged": {
-    "*.ts": [
+    "*.{ts,js}": [
+      "eslint --fix",
       "prettier --write",
-      "eslint --fix"
+      "jest --findRelatedTests --bail"
+    ],
+    "*.ts": [
+      "tsc --noEmit"
     ]
   }
 }
