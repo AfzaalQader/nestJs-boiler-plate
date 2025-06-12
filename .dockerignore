@@ -1,0 +1,9 @@
+node_modules
+.git
+.vscode
+.env
+dist # Only if you don't clean it before building
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+*.log
